@@ -32,7 +32,7 @@
                     <div class="card-image">
                         <strong>{{ loop.index }}.</strong>
                         <a href="{{ url_for("productdetail", product_item=loop.index - 1) }}">
-                            <img height="185px" width="185px" src="{{ foody.image }}" alt="{{ foody.name }}">
+                            <img style="border: 1px solid #ececec" height="185px" width="185px" src="{{ foody.image }}" alt="{{ foody.name }}">
                         </a>
                         <div class="card-content" style="text-align: left; border: 0px; height: 120px">
                             <div class="name">
@@ -42,8 +42,14 @@
                             <div class="rating">
                                 <div class="rating-content">
                                     <span class="rating-title">Đánh giá: <span class="badge" style="background: green; width: 40px; color: #fff; -webkit-border-radius: 100px;-moz-border-radius: 100px;border-radius: 100px; ">{{ foody.rating }}
+
                                         </span>
                                     </span>
+                                </div>
+                            </div>
+                            <div class="price">
+                                <div class="price-content" style="text-align: center; padding: 10px">
+                                    <span class="price-title" style=" font-size: 13px;font-weight: bold;text-align: center;color: black;">{{ foody.price }}</span>
                                 </div>
                             </div>
                         </div>

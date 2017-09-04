@@ -2,4 +2,3 @@ beautifulSoup4
 mongoengine
 flask
 gunicorn
-gevent
